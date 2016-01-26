@@ -1,0 +1,26 @@
+*Read the github terms of service and privacy policy.
+*Create a github account.
+username: email1234-cmis
+*Create a new repository on github.com
+repository name: email1234-cmis-cs2
+*check the box that says "Create README.md"
+*Use the creative commons zero license
+*Go to settings:
+*Add me as a collaborator: My github username is nkieffer-cmis
+*Clone your repository with the following command (Note: the whole command should be on 1 line in terminal):
+git clone --config="http.proxy=http://your-network-username:your-network-password@192.168.2.1:8080" https://github.com/your-github-username/your-github-repository-name.git
+*Open the file called README.md
+*Edit the file and add a brief description of what your github code repository will be used for.
+*Save the file.
+*Add, Commit, and Push your changes back to github.com.
+*git add filename
+*git commit -m "Commit message"
+*git push
+*Create a new text file called cheatsheet.txt in your repository folder.
+*Start creating a list of all the terminal commands we have used so far in this class
+*Save the file
+*Create a new text file called tools.txt in your repository folder.
+*Copy and paste this list of requirements into the file.
+*Put an asterisk (*) in front of each requirement that you completed.
+*Save the file.
+*Add, commit, and push your changes back to github.com

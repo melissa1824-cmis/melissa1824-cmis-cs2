@@ -1,0 +1,6 @@
+cd is for going into a repository folder.
+ls is to show all the files you have in the repository folder. 
+gedit is used to create new files. 
+git add is to add things into Github. 
+git commit is to show the description of the files.
+git push is to save the file into Github. 
