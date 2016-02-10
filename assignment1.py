@@ -16,7 +16,7 @@ halfVol = volCube/2.0 #variable containing half the volume of a cube with the si
 areaRect = rectLength * rectHeight #variable containing the area of the rectangle with the height and side lengths created before.
 ninthRect = areaRect * 1/9.0 #variable containing one-ninth of the area of the the rectangle with the height and side lengths created before. 
 print "I am " +str(myAge)+ " years old at the moment. I am " +str(ageMonths)+ " months old. I have around " +str(yearsToLive)+ " years to live according to the average lifespan. I am " +str(heightFeet)+ " feet in standard measure."
-print "Hi. My name is" ,myName, ". I am" ,myHeight, "meters tall. In American measurements, my height is ",heightFeet, "feet. I am" ,myAge, "so according to the average life span, I have" ,yearsToLive, "more years to live."
+print "Hi. My name is" ,myName, ". I am" ,myHeight, "meters tall. In American measurements, my height is ",heightFeet, "feet. I am" ,myAge, "years old, so according to the average life span, I have" ,yearsToLive, "more years to live."
 winkyFace = ";)" #winkyface
 print winkyFace * 10000
 
