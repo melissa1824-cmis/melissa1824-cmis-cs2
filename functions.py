@@ -23,16 +23,15 @@ def circle_area(a):
     return a**2 * math.pi
 circle_area(5)
 
-def sphere_volume(a):
+def sphere_volume(radius):
 	b = float(4/3)
-	return float(4/3) * math.pi * a**3
+	return float(4/3) * math.pi * radius**3
 sphere_volume(5)
 
-def avg_volume(a, b):
-    c = float(a/2)
-    d = float(b/2)
-    e = float(4/3)
-    return ((e)*math.pi*(c**3)) + ((e)*math.pi*(d**3))/2
+def avg_volume(diameter1, diameter2):
+    radius1 = float(diameter1/2)
+    radius2 = float(diameter2/2)
+    return (sphere_volume(radius1)) + (sphere_volume(radius2))/2
 avg_volume(10, 20)
 
 def area(a, b, c):
