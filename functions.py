@@ -37,33 +37,45 @@ avg_volume(10, 20)
 
 def area(a, b, c):
     s = (a + b + c)/2
-    return math.sqrt(float((s(s-a)(s-b)(s-c))))
-area(1, 2, 2.5)
+    return math.sqrt(2.75*(2.75-a)*(2.75-b)*(2.75-c))
 
-def right_align(a):
-	print str(" "*40 - len(a)) 
+def right_align(word):
+	return str ((80-len(word))*" " + word) 
+
+print right_align("Hello")
 
 def center(a):
-    print str(" "*80 - len(a))
+    return str ((40- len(a))*" " + a)
+
+print center("Hello")
 
 def msg_box(txt):
 	return "+" + ((len(txt)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (txt) + (2*" ") + "|" + "\n" + "+" + ((len(txt)+4)*"-") + "+"
 msg_box("Hello")
 
-a = add(3, 4)
-print a
-b = sub(5, 3)
-print b
-c = mul(4, 4) 
-print c
-d = div(2, 3)
-print d
-e = hours_from_seconds(86400)
-print e
-f = circle_area(5)
-print f
-g = sphere_volume(5)
-print g
-h = avg_volume(10, 20)
-print h
+print msg_box("Hello")
+print msg_box("I eat cats")
 
+a = add(3, 4)
+b = sub(5, 3)
+c = mul(4, 4) 
+d = div(2, 3)
+e = hours_from_seconds(86400)
+f = circle_area(5)
+g = sphere_volume(5)
+h = avg_volume(10, 20)
+i = area(1.0, 2.0, 2.5)
+j = right_align("Hello")
+k = center("Hello")
+
+print msg_box(str(a))
+print msg_box(str(b))
+print msg_box(str(c))
+print msg_box(str(d))
+print msg_box(str(e))
+print msg_box(str(f))
+print msg_box(str(g))
+print msg_box(str(h))
+print msg_box(str(i))
+print msg_box(str(j))
+print msg_box(str(k))
