@@ -36,8 +36,8 @@ def avg_volume(a, b):
 avg_volume(10, 20)
 
 def area(a, b, c):
-    s = (a + b + c)/2
-    return math.sqrt(2.75*(2.75-a)*(2.75-b)*(2.75-c))
+    s = (a + b + c)/2 #2.75
+    return math.sqrt(2.75*(2.75-a)*(2.75-b)*(2.75-c)) #Heron's formula
 
 def right_align(word):
 	return str ((80-len(word))*" " + word) 
