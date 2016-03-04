@@ -12,9 +12,9 @@
 #4 5pts) We know 5 basic data types. Write the name for each one and provide two
 #   examples of each below
 #	1: boolean - True, False
-#	2: integer - int(3)
-#	3: floating point - float(1.5)
-#	4: string - str("Hello")
+#	2: integer - 3, 5
+#	3: floating point - 1.5, 6.7
+#	4: string - "Hello" "Goodbye"
 #	5: tuple - tuple("Hello")
 #
 #5 2pts) What is the difference between a "function definition" and a 
@@ -23,7 +23,7 @@
 #
 #6 3pts) What are the 3 phases that every computer program has? What happens in
 #        each of them
-#	1: Debuggin
+#	1: Debugging
 #	2: Testing
 #	3: Implementation
 #
