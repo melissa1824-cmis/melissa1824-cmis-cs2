@@ -7,7 +7,6 @@ I'm thinking of a number from {} to {}.
 """.format(number1, number2)
 
 def result(target, guess, offby):
-
     if target > guess:
         print """
 The target was {}.
@@ -15,18 +14,18 @@ Your guess was {}.
 That's under by {}.
 """.format(target, guess, offby)
 
-    elif taget == guess:
-        print """
-The target {}.
-Your guess was {}.
-That's equal to {}.
-""".format(target, guess, offby)
-    
-    else target < guess:
+    elif target == guess:
         print """
 The target was {}.
 Your guess was {}.
-That's under by {}.
+You're a mind reader!
+""".format(target, guess, offby)
+    
+    else:
+        print """
+The target was {}.
+Your guess was {}.
+That's over by {}.
 """.format(target, guess, offby)
     
 def main():
@@ -34,6 +33,7 @@ def main():
     number2 = raw_input("What is the maximum number? ")
     print output(number1, number2)
     guess = raw_input("What do you think it is? ")
-    randomnumber = random(number1, number2)
-    offby = abs(target - guess)
+    target = random.randint(int(number1), int(number2)) 
+    offby = abs(int(target) - int(guess))
+    result(target, guess, offby)
 main()
