@@ -1,83 +1,77 @@
 import random
-
+import math
 #My game will be like Monopoly. You choose a city from the list for yourself and your opponent. Each city has a different value (random value generated = how much the city is worth in dollars). After choosing a city, a tax value is subtracted from the value of the city. This tax value is randomly generated. If the final value you have is higher than the opponent's, you win. If not, you lose. *** Happiness of citizens is important. *** 
 
 def value(city):
     if city == "Washington":
-        value = 100,000,000
+        value = float(100,000,000)
     if city == "New York":
-        value = 90,000,000
+        value = float(90,000,000)
     elif city == "San Francisco": 
-        value = 80,000,000
+        value = float(80,000,000)
     elif city == "Houston":
-        value = 70,000,000,000
+        value = 70000000
     elif city == "Los Angeles":
-        value = 60,000,000
+        value = 60000000
     elif city == "Las Vegas":
-        value = 50,000,000
+        value = 50000000
     elif city == "Detroit":
-        value = 40,000,000
+        value = 40000000
     elif city == "New Orleans":
-        value = 30,000,000
+        value = 30000000
     elif city == "San Jose":
-        value = 20,000,000
+        value = 20000000
     elif city == "Philadelphia":
-        value = 10,000,000
+        value = 10000000
     else:
         value = random.randint((10,000,000), (100,000,000))
     return value
 
-def taxValue():
-    tax = int(raw_input("What tax value do you desire (10,000,000-100,000,000): "))
-    if tax > int(100,000,000) or tax < int(10,000,000):
-        tax = random.randint(10,000,000, 100,000,000)
-    taxValue = float(tax) * 5
-    return taxValue
+def player1City():
+    player1City = raw_input("Which city do you choose?: ")
 
-def citizens(playerValue, enemyValue, taxValue):
-    population = random.random()
-    happiness1 = (value + taxValue ** 3) / population
-    happiness2 = (enemyValue + taxValue ** 3) / population
-    return 
+def player2City():
+    player2City = raw_input("Which city does player 2 choose?: ")
 
-def total(playerValue, taxValue, citizens):
-    player1result = playerValue + tax + happiness1
-    player2result = value + tax + happiness2
+def taxValue1():
+    tax1 = random.randint(5000, 25000)
+    taxValue1 = tax1/2
     return
-    if player1result > player2result:
-        return True
-    else:
-        return False
 
-def result(playerValue, taxValue1, result1):
-    if result == True:
-        msg = "You won! Your city is worth more!"
+def taxValue2():
+    tax2 = random.randint(5000, 25000)
+    taxValue2 = tax1/2
+
+def player1specs():
+    tax1 = random.randint(5000, 25000)
+    taxValue1 = tax1/2
+    return player1City
+    return taxValue1
+
+def player2specs():
+    tax2 = random.randint(5000, 25000)
+    taxValue2 = tax2/2
+    return player2City
+    return taxValue2
+
+def cashbattle(player1City, taxValue1, player2City, taxValue2):
+    aftertax1 = int(player1City) - int(taxValue1)
+    aftertax2 = int(player2City) - int(taxValue2)
+    return aftertax1
+    return aftertax2
+
+def result(aftertax1, aftertax2):
+    if aftertax1 > aftertax2:
+        print "Player 1 WON!"
     else:
-        msg = "You lost :( Your opponent's city is worth more."
-    return """
-Your city's total value: {}
-Your opponent's city's total value: {}
-""".format(playerValue, taxValue1, result1)
+        print "Player 2 WON!"
 
 def main():
-    playerCity = raw_input("Which city do you choose?: ")
-    enemyCity = raw_input("Which city does enemy 1 choose?: ")
+    player1City = raw_input("Which city do you choose?: ")
+    player2City =  raw_input("Which city does player 2 choose?: ")
+    player1specs()
+    player2specs()
+    cashbattle(player1City, taxValue1, player2City, taxValue2)
+    result()
 
-    playerValue = value(playerCity)
-    enemyValue = value(enemyCity)
-
-    player1tax = taxValue()
-    result1 = total(playerValue, player1tax, citizens)
-
-    player2tax = taxValue()
-    result2 = total(playerValue, player2tax, citizens)
-
-    output = """
-Your city is {}.
-Your opponent's city is {}.
-""".format(playerCity, enemyCity)
-    output += result(playerValue, taxValue, total1)
-    output += result(playerValue, taxValue, total2)
-
-    print output
 main()
