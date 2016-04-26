@@ -1,42 +1,43 @@
 import math
 #PART 1: Terminology
 #1) Give 3 examples of boolean expressions.
-#a) 3 == 3
-#b) 5 != 8
-#c) 45 > 23
+#a) 3 == 3 #point
+#b) 5 != 8 #point
+#c) 45 > 23 #point
 #
 #2) What does 'return' do?
-# returns/prints the value/result of the function.
+# returns/prints the value/result of the function. #point
 # 
 #3) What are 2 ways indentation is important in python code?
-#a) It knows that the next line is part of the function
-#b) It knows that the next line of the function has to be executed 
+#a) It knows that the next line is part of the function #point
+#b) It knows that the next line of the function has to be executed #point
 #
 
 #PART 2: Reading
 #Type the values for 12 of the 16 of the variables below.
 #
-#problem1_a)
-#problem1_b) square root of 3
-#problem1_c) 0
-#problem1_d) 5
+#problem1_a) -36 #point
+#problem1_b) square root of 3 #point
+#problem1_c) 0 #point
+#problem1_d) 5 #point
 #
-#problem2_a) True
-#problem2_b) False
-#problem2_c) True
-#problem2_d) True
+#problem2_a) True #point
+#problem2_b) False #point
+#problem2_c) True 
+#problem2_d) True #point
 #
-#problem3_a) 0.3
-#problem3_b) 0.5
-#problem3_c) 0.5
-#problem3_d) 0.5
+#problem3_a) 0.3 #point
+#problem3_b) 0.5 #point
+#problem3_c) 0.5 #point
+#problem3_d) 0.5 #point
 #
 #problem4_a) 5
-#problem4_b) 5
+#problem4_b) 5 #point
 #problem4_c) 
 #problem4_d) 
 #
-
+#points for 23, 24, 25, 26, 27, 28, 30, 31
+# 8 points
 print "Type in 3 different numbers (decimals are OK!)"
 
 def number1(number1):
