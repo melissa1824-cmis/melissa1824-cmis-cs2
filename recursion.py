@@ -23,14 +23,34 @@ def countdownTo(start, stop):
         countdownTo(start-1, stop)
 countdownTo(10, 5)
 
-def adder():
-    n = raw_input("n: ")
-    while True:
-        input = raw_input("n: ")
-        if input == "":
-            break
+def total():
+    RunningTotal = float(0)
+    print "Running total: ", RunningTotal
+    calculation(RunningTotal)
 
+def calculation(RunningTotal):    
+    addno = raw_input("Next number: ")
+    if addno != "":
+        print "Running total: ", RunningTotal + float(addno)
+        calculation(RunningTotal + float(addno))
+    else:
+        print "The sum is ", RunningTotal
+ 
+def number():
+    Biggest = float(0)
+    print "Number: ", Biggest
+    biggest(number)
+
+def biggest(number):
+    compareno = raw_input("Number: ")
+    if compareno > compareno: 
+        print "Biggest number is: " +float(comapreno)
+    else:
+        compareno < compareno 
+        print "Biggest number is: " +
+    
 def main():
-    adder()
-
+    total()
+    number()
+    biggest(number)
 main()
