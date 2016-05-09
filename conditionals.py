@@ -25,7 +25,7 @@ def player1City():
     elif city == "Philadelphia":
         value = int('10,000,000')
     else:
-            value = random.randint((10,000,000), (100,000,000))
+        value = random.randint((10,000,000), (100,000,000))
     return value
 
 def player2City():
