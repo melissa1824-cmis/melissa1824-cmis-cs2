@@ -1,6 +1,14 @@
 import random
 #Eat at a French restaurant if you are hungry. You have the choice between snails and foie gras. If you are not hunry, you will leave.
 
+def start(hello):
+    if hello == "Hello":
+        print "The game will start soon"
+
+def start2(cheese):
+    if cheese == "I like cheese":
+        print "Awesome! The game will start now."
+
 def getready(outfit):
     print "Let's get ready for dinner! Choose something to wear!"
     if outfit == "Parrot":
@@ -45,7 +53,9 @@ def drink(drinkoption):
         print "That's too bad."
 
 def drinkchoice(surprise):
-    if surprise > random.randint(1, 10):
+    surprise2 = float(surprise * random.random())
+    print surprise2
+    if surprise2 > random.randint(1, 10):
         print "You chose champagne!"
     else: 
         print "You chose wine!"
@@ -53,12 +63,16 @@ def drinkchoice(surprise):
 def output(outfit, shoes):
     return """
 You have chosen to wear the {} outfit and shoes from {}.
-Hello valued customer!
 You have blindly chosen your meal!
 Bon appetit!
 """.format(outfit, shoes)
 
 def main():
+    hello = raw_input("Type 'Hello': ")
+    start(hello)
+    cheese = raw_input("Type 'I like cheese': ")
+    start2(cheese)
+    print "Let's get ready for dinner! Choose something to wear!"
     outfit = raw_input("Choose one of these birds to determine your outfit 'Peacock, Robin, Parrot': ")
     getready(outfit)
     shoes = raw_input("Choose one of these countries to determine your footwear 'Brazil, Canada, Thailand': ")
