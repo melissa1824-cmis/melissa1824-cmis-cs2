@@ -12,16 +12,16 @@ def final(a, b):
 
 def guess (chosen, time):
 	answer = raw_input("Guess a number: ")
-	if int(answer) == int(chosen):
-		correct()
+	if int(answer) > int(chosen):
+		print "Number is too high"
+		guess(chosen, time+1)
 	if time == 5:
-		print "You have run out of guesses. Play again"
+		print "Sorry your chance is gone now. But play again!"
 	elif int(answer) < int(chosen):
 		print "Number is too low"
 		guess(chosen, time+1)
 	else:
-		print "Number is too high"
-		guess(chosen, time+1)
+		correct()
 
 def repeat(again):
 	num = raw_input("What is the minimum number?: ")
