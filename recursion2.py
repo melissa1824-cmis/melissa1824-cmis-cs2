@@ -15,7 +15,7 @@ def guess (chosen, time):
 	if int(answer) == int(chosen):
 		correct()
 	if time == 5:
-		print "Sorry your chance is gone now. But play again!"
+		print "You have run out of guesses. Play again"
 	elif int(answer) < int(chosen):
 		print "Number is too low"
 		guess(chosen, time+1)
