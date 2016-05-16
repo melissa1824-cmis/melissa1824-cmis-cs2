@@ -36,21 +36,6 @@ def calculation(RunningTotal):
     else:
         print "The sum is ", RunningTotal
  
-def number():
-    Biggest = float(0)
-    print "Number: ", Biggest
-    biggest(number)
-
-def biggest(number):
-    compareno = raw_input("Number: ")
-    if compareno > compareno: 
-        print "Biggest number is: " +float(comapreno)
-    else:
-        compareno < compareno 
-        print "Biggest number is: " +
-    
 def main():
     total()
-    number()
-    biggest(number)
 main()
